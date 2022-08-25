@@ -14,13 +14,13 @@
   {
     "id": 3,
     "name": "car",
-    "price": 1.05,
+    "price": 14000,
     "imgUrl": "https://unsplash.com/photos/p7tai9P7H-s"
   },
   {
     "id": 4,
     "name": "banana",
-    "price": 14000,
+    "price": 1.05,
     "imgUrl": "https://unsplash.com/photos/fczCr7MdE7U"
   }
 ]
