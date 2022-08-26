@@ -3,24 +3,24 @@
     "id": 1,
     "name": "book",
     "price": 10.99,
-    "imgUrl": "https://unsplash.com/photos/ViMrMawjj7s"
+    "imgUrl": "https://i.ibb.co/H4bqpLp/photo-1641154748135-8032a61a3f80.jpg"
   },
   {
     "id": 2,
     "name": "computer",
     "price": 1199,
-    "imgUrl": "https://i.ibb.co/1ZktGSM/photo-1551739440-5dd934d3a94a.jpg"
+    "imgUrl": "https://i.ibb.co/Q9Y8jtx/photo-1551739440-5dd934d3a94a.jpg"
   },
   {
     "id": 3,
     "name": "car",
     "price": 14000,
-    "imgUrl": "https://unsplash.com/photos/p7tai9P7H-s"
+    "imgUrl": "https://i.ibb.co/r4rhnK7/photo-1502877338535-766e1452684a.jpg"
   },
   {
     "id": 4,
     "name": "banana",
     "price": 1.05,
-    "imgUrl": "https://unsplash.com/photos/fczCr7MdE7U"
+    "imgUrl": "https://i.ibb.co/HKGBSRx/photo-1571771894821-ce9b6c11b08e.jpg"
   }
 ]
