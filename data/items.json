@@ -9,7 +9,8 @@
     "id": 2,
     "name": "computer",
     "price": 1199,
-    "imgUrl": "https://unsplash.com/photos/wzVQp_NRIHg"
+    //"imgUrl": "https://unsplash.com/photos/wzVQp_NRIHg"//
+    "imgUrl": "https://ibb.co/WnL4vT0"
   },
   {
     "id": 3,
