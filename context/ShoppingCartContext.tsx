@@ -20,7 +20,9 @@ function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
 
-function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
+export default function ShoppingCartProvider({
+  children,
+}: ShoppingCartProviderProps) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   function getItemQuantity(id: number) {
@@ -79,4 +81,3 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
 }
 
 export default useShoppingCart;
-export default ShoppingCartProvider;
