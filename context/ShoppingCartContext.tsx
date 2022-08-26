@@ -14,7 +14,7 @@ type CartItem = {
   quantity: number;
 };
 
-const ShoppingCartContext = createContext([] as ShoppingCartContextProps);
+const ShoppingCartContext = createContext([]);
 
 function useShoppingCart() {
   return useContext(ShoppingCartContext);
