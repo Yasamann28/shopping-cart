@@ -43,7 +43,7 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     });
   }
 
-  function decreaseCartQuantity() {
+  function decreaseCartQuantity(id: number) {
     setCartItems((currentItems) => {
       if (currentItems.find((item) => item.id === id)?.quantity === 1) {
         return currentItems.filter((item) => item.id !== id);
@@ -59,9 +59,19 @@ function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     });
   }
 
+  function removeFromCart(id: number) {
+    setCartItems((currentItems) => {
+      return currentItems.filter((item) => item.id !== id);
+    });
+  }
   return (
     <ShoppingCartContext.Provider
-      value={{ getItemQuantity, increaseCartQuantity, decreaseCartQuantity }}
+      value={{
+        getItemQuantity,
+        increaseCartQuantity,
+        decreaseCartQuantity,
+        removeFromCart,
+      }}
     >
       {children}
     </ShoppingCartContext.Provider>
