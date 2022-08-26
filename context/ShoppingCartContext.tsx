@@ -3,7 +3,7 @@ import React, { createContext, ReactNode, useContext, useState } from 'react';
 type ShoppingCartProviderProps = {
   children: ReactNode;
 };
-type ShoppingCartContext = {
+type ShoppingCartContextProps = {
   getItemQuantity: (id: number) => number;
   increaseCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
@@ -14,7 +14,7 @@ type CartItem = {
   quantity: number;
 };
 
-const ShoppingCartContext = createContext({} as ShoppingCartContext);
+const ShoppingCartContext = createContext({} as ShoppingCartContextProps);
 
 function useShoppingCart() {
   return useContext(ShoppingCartContext);
