@@ -3,26 +3,24 @@ import React, { createContext, ReactNode, useContext, useState } from 'react';
 type ShoppingCartProviderProps = {
   children: ReactNode;
 };
-type ShoppingCartContextProps = {
+type CartItem = {
+  id: number;
+  quantity: number;
+};
+type ShoppingCartContext = {
   getItemQuantity: (id: number) => number;
   increaseCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
 };
-type CartItem = {
-  id: number;
-  quantity: number;
-};
 
-const ShoppingCartContext = createContext([]);
+const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
-function useShoppingCart() {
+export function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
 
-export default function ShoppingCartProvider({
-  children,
-}: ShoppingCartProviderProps) {
+export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   function getItemQuantity(id: number) {
@@ -79,5 +77,3 @@ export default function ShoppingCartProvider({
     </ShoppingCartContext.Provider>
   );
 }
-
-export default useShoppingCart;
