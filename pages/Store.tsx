@@ -1,7 +1,7 @@
 import React from 'react';
 import storeItems from '../data/items.json';
 import { Row, Col } from 'react-bootstrap';
-import StoreItem from '../components/StoreItem';
+import { StoreItem } from '../components/StoreItem';
 
 export default function Store() {
   return (
