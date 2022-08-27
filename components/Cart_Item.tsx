@@ -33,6 +33,7 @@ export function Cart_Item({ id, quantity }: Cart_Item_Props) {
           {formatCurrency(item.price)}
         </div>
       </div>
+      <div>{formatCurrency(item.price * quantity)}</div>
     </Stack>
   );
 }
