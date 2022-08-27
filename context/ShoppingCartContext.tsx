@@ -26,6 +26,7 @@ export function useShoppingCart() {
 }
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
+  
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const [isOpen, setIsOpen] = useState(false);
