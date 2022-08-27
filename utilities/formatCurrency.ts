@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
-  currency: 'USD',
+  currency: 'EUR',
   style: 'currency',
 });
 
